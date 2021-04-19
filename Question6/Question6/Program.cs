@@ -14,26 +14,32 @@ namespace Question6
                 Console.Write("Enter array elements: ");
 
                 int arrayElements = int.Parse(Console.ReadLine());
-                int[] myArray = new int[arrayElements];
+                int[] firstMyArray = new int[arrayElements];
 
-                for (int i = 0; i < myArray.Length; i++)
+                for (int i = 0; i < firstMyArray.Length; i++)
                 {
                     Console.Write($"Enter {i} index, array number: ");
-                    myArray[i] = int.Parse(Console.ReadLine());
+                    firstMyArray[i] = int.Parse(Console.ReadLine());
                 }
 
-                int sumEvenNumber = 0;
+                int[] secondMyArray = new int [arrayElements];
 
-                for (int i = 0; i < myArray.Length; i++)
+                for (int i = 0; i < firstMyArray.Length; i++)
                 {
-                    if (i % 2 != 0)
-                    {
-                        sumEvenNumber += myArray[i];
-                    }
+                    secondMyArray[i] = firstMyArray[arrayElements-1];
+                    arrayElements--;
+                    
                 }
 
-                Console.WriteLine($"Result odd element from array: {sumEvenNumber}");
+                foreach (int numElements in secondMyArray)
+                {
+                    Console.Write($"{numElements} ");
+                }
+
+                
+
                 Console.Write("\nWould you try again ? (Y/y) or (N/n): ");
+
                 do
                 {
                     char symbolForSwitch = Convert.ToChar(Console.ReadLine());
