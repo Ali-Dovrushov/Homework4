@@ -22,17 +22,17 @@ namespace Question7
                     myArray[i] = int.Parse(Console.ReadLine());
                 }
 
-                int sumEvenNumber = 0;
+                int sumOddNumber = 0;
 
                 for (int i = 0; i < myArray.Length; i++)
                 {
                     if (myArray[i] % 2 != 0)
                     {
-                        ++sumEvenNumber;
+                        ++sumOddNumber;
                     }
                 }
 
-                Console.WriteLine($"Result odd element from array: {sumEvenNumber}");
+                Console.WriteLine($"Result odd element from array: {sumOddNumber}");
                 Console.Write("\nWould you try again ? (Y/y) or (N/n): ");
                 do
                 {
