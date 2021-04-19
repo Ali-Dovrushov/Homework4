@@ -32,7 +32,7 @@ namespace Question6
                     }
                 }
 
-                Console.WriteLine($"Result min element from array: {sumEvenNumber}");
+                Console.WriteLine($"Result odd element from array: {sumEvenNumber}");
                 Console.Write("\nWould you try again ? (Y/y) or (N/n): ");
                 do
                 {
