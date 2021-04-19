@@ -1,0 +1,17 @@
+﻿<Properties StartupConfiguration="{41632639-A705-45B0-B532-CE43E8852D8C}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Question5/Program.cs">
+    <Files>
+      <File FileName="Question5/Program.cs" Line="12" Column="13" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Question5 PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches>
+    <Watch file="../../../Question5/Program.cs" line="10" column="16" endLine="10" endColumn="47" offsetX="-1" offsetY="-1" expression="rows" liveUpdate="False" />
+    <Watch file="../../../Question5/Program.cs" line="11" column="16" endLine="11" endColumn="43" offsetX="-1" offsetY="-1" expression="columns" liveUpdate="False" />
+  </MonoDevelop.Ide.DebuggingService.PinnedWatches>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
