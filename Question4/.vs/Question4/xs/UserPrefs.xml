@@ -1,15 +1,8 @@
 ﻿<Properties StartupConfiguration="{D7AED9DF-81A9-4A7F-8B5A-695ADA667518}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="Question4/Program.cs">
     <Files>
-      <File FileName="Question4/Program.cs" Line="11" Column="35" />
+      <File FileName="Question4/Program.cs" Line="43" Column="25" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="Question4" expanded="True" selected="True" />
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.Question4 PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
