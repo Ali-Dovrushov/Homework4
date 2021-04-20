@@ -22,43 +22,43 @@ namespace Question5
                     myArray[i] = int.Parse(Console.ReadLine());
                 }
 
-                int sumEvenNumber = 0;
+                int sumOddNumber = 0;
 
                 for (int i = 0; i < myArray.Length; i++)
                 {
                     if (i % 2 != 0)
                     {
-                        sumEvenNumber += myArray[i];
+                        sumOddNumber += myArray[i];
                     }
                 }
 
-                Console.WriteLine($"Result min element from array: {sumEvenNumber}");
+                Console.WriteLine($"Result sum odd index element from array: {sumOddNumber}");
                 Console.Write("\nWould you try again ? (Y/y) or (N/n): ");
                 do
                 {
-                    char symbolForSwitch = Convert.ToChar(Console.ReadLine());
+                    string symbolForSwitch = Convert.ToString(Console.ReadLine());
                     switch (symbolForSwitch)
                     {
-                        case 'Y':
+                        case "Y":
                             {
                                 selection = true;
                                 selectionForSwitch = true;
                                 break;
                             }
-                        case 'y':
+                        case "y":
                             {
                                 selection = true;
                                 selectionForSwitch = true;
                                 break;
                             }
-                        case 'N':
+                        case "N":
                             {
                                 Console.WriteLine("Have a good day :)");
                                 selection = false;
                                 selectionForSwitch = true;
                                 break;
                             }
-                        case 'n':
+                        case "n":
                             {
                                 Console.WriteLine("Have a good day :)");
                                 selection = false;
