@@ -6,7 +6,7 @@ namespace Question8
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Question №1");
+            Console.WriteLine("Question №8");
 
             bool selection = true;
             bool selectionForSwitch = false;
@@ -37,7 +37,7 @@ namespace Question8
                     counterForFirst++;
                 }
 
-                for (int i = 0; i < firstMyArray.Length; i++)
+                for (int i = 1; i < firstMyArray.Length; i++)
                 {
                     Console.Write(firstMyArray[i]);
                 }
@@ -48,26 +48,26 @@ namespace Question8
                     string symbolForSwitch = Convert.ToString(Console.ReadLine());
                     switch (symbolForSwitch)
                     {
-                        case "y":
-                            {
-                                selection = true;
-                                selectionForSwitch = true;
-                                break;
-                            }
                         case "Y":
                             {
                                 selection = true;
                                 selectionForSwitch = true;
                                 break;
                             }
-                        case "n":
+                        case "y":
+                            {
+                                selection = true;
+                                selectionForSwitch = true;
+                                break;
+                            }
+                        case "N":
                             {
                                 Console.WriteLine("Have a good day :)");
                                 selection = false;
                                 selectionForSwitch = true;
                                 break;
                             }
-                        case "N":
+                        case "n":
                             {
                                 Console.WriteLine("Have a good day :)");
                                 selection = false;
