@@ -36,29 +36,29 @@ namespace Question2
                 Console.Write("\nWould you try again ? (Y/y) or (N/n): ");
                 do
                 {
-                    char symbolForSwitch = Convert.ToChar(Console.ReadLine());
+                    string symbolForSwitch = Convert.ToString(Console.ReadLine());
                     switch (symbolForSwitch)
                     {
-                        case 'Y':
+                        case "Y":
                             {
                                 selection = true;
                                 selectionForSwitch = true;
                                 break;
                             }
-                        case 'y':
+                        case "y":
                             {
                                 selection = true;
                                 selectionForSwitch = true;
                                 break;
                             }
-                        case 'N':
+                        case "N":
                             {
                                 Console.WriteLine("Have a good day :)");
                                 selection = false;
                                 selectionForSwitch = true;
                                 break;
                             }
-                        case 'n':
+                        case "n":
                             {
                                 Console.WriteLine("Have a good day :)");
                                 selection = false;
