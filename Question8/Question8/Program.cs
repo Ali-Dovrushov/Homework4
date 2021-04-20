@@ -1,26 +1,4 @@
-﻿//using System;
-
-//namespace Question8
-//{
-//    class Program
-//    {
-//        static void Main(string[] args)
-//        {
-//            int[,] nums1 = new int[ArrayElements, ArrayElements1];
-
-//            int[] nums2 = new int[3];
-
-//            int[] nums3 = new int[3];
-
-//            for (int i = 0; i < nums1.Length-2; i++)
-//            {
-//                nums1[i,i] = nums2[2];
-//                Console.WriteLine(nums2);
-//            }
-//        }
-//    }
-//}
-using System;
+﻿using System;
 
 namespace Question8
 {
@@ -39,7 +17,6 @@ namespace Question8
 
                 int arrayElements = int.Parse(Console.ReadLine());
                 int[] firstMyArray = new int[arrayElements];
-                int[] secondMyArray = new int [arrayElements];
 
                 for (int i = 0; i < firstMyArray.Length; i++)
                 {
@@ -47,96 +24,50 @@ namespace Question8
                     firstMyArray[i] = int.Parse(Console.ReadLine());
                 }
 
-                int a = firstMyArray.Length / 2;
+                int counterForFirst = firstMyArray.Length / 2;
+                int counterForSecond = 0;
 
-                for (int i = 0; i <= a; i++)
+                while (counterForSecond < firstMyArray.Length / 2)
                 {
-                    if (a % 2 == 0)
-                    {
-                        secondMyArray[i] = firstMyArray[firstMyArray.Length / 2 + i];
-                        a--;
-                        Console.WriteLine(secondMyArray[i]);
-                    }
-                    else if (a % 2 != 0)
-                    {
-                        secondMyArray[i] = firstMyArray[firstMyArray.Length / 2 + i];
-                        a++;
-                        Console.WriteLine(secondMyArray[i]);
-                    }
+                    int counter = firstMyArray[counterForSecond];
+                    firstMyArray[counterForSecond] = firstMyArray[counterForFirst];
+                    firstMyArray[counterForFirst] = counter;
+
+                    counterForSecond++;
+                    counterForFirst++;
                 }
 
-                for (int i = a; i < firstMyArray.Length / 2; i++)
+                for (int i = 0; i < firstMyArray.Length; i++)
                 {
-                    secondMyArray[i] = firstMyArray[i];
-                    a++;
-                    Console.WriteLine(secondMyArray[i]);
+                    Console.Write(firstMyArray[i]);
                 }
-
-                //for (int i = arrayElements / 2 ; i < arrayElements; i++)
-                //{
-                //    secondMyArray[i] = firstMyArray[i];
-                //    firstMyArray[i] = firstMyArray[arrayElements / 2];
-                //    firstMyArray[arrayElements / 2] = secondMyArray[i];
-                //    //Console.WriteLine(secondMyArray[i]);
-                //    arrayElements--;
-                //    Console.WriteLine(firstMyArray[i]);
-                //}
-
-                //int[] nums5 = new int[6];
-
-                //int count1 = 0;
-                //int count2 = nums5.Length / 2;
-
-                //for (int i = 0; i < nums5.Length; i++)
-                //{
-                //    Console.Write("{0} number = ", i + 1);
-
-                //    nums5[i] = Int32.Parse(Console.ReadLine());
-                //}
-                //while (count1 < nums5.Length / 2)
-                //{
-
-                //    int temp = nums5[count1];
-                //    nums5[count1] = nums5[count2];
-                //    nums5[count2] = temp;
-
-                //    count1++;
-                //    count2++;
-                //}
-
-                //for (int i = 0; i < nums5.Length; i++)
-                //{
-                //    Console.Write(nums5[i]);
-                //}
-                //Console.WriteLine("\nPress any button...");
-                //Console.ReadKey();
 
                 Console.Write("\nWould you try again ? (Y/y) or (N/n): ");
                 do
                 {
-                    char symbolForSwitch = Convert.ToChar(Console.ReadLine());
+                    string symbolForSwitch = Convert.ToString(Console.ReadLine());
                     switch (symbolForSwitch)
                     {
-                        case 'Y':
+                        case "y":
                             {
                                 selection = true;
                                 selectionForSwitch = true;
                                 break;
                             }
-                        case 'y':
+                        case "Y":
                             {
                                 selection = true;
                                 selectionForSwitch = true;
                                 break;
                             }
-                        case 'N':
+                        case "n":
                             {
                                 Console.WriteLine("Have a good day :)");
                                 selection = false;
                                 selectionForSwitch = true;
                                 break;
                             }
-                        case 'n':
+                        case "N":
                             {
                                 Console.WriteLine("Have a good day :)");
                                 selection = false;
