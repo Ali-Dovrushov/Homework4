@@ -17,6 +17,9 @@ namespace Question8
 
                 int arrayElements = int.Parse(Console.ReadLine());
                 int[] firstMyArray = new int[arrayElements];
+                int[] secondMyArray = new int[arrayElements];
+                int counter = 0;
+                int checkerForOddEvenArray = 1;
 
                 for (int i = 0; i < firstMyArray.Length; i++)
                 {
@@ -24,22 +27,53 @@ namespace Question8
                     firstMyArray[i] = int.Parse(Console.ReadLine());
                 }
 
-                int counterForFirst = firstMyArray.Length / 2;
-                int counterForSecond = 0;
-
-                while (counterForSecond < firstMyArray.Length / 2)
+                if (firstMyArray.Length % 2 != 0)
                 {
-                    int counter = firstMyArray[counterForSecond];
-                    firstMyArray[counterForSecond] = firstMyArray[counterForFirst];
-                    firstMyArray[counterForFirst] = counter;
-
-                    counterForSecond++;
-                    counterForFirst++;
+                    checkerForOddEvenArray = 1;
+                    for (int i = 0; i < firstMyArray.Length; i++)
+                    {
+                        if (i < firstMyArray.Length / 2)
+                        {
+                            secondMyArray[firstMyArray.Length / 2 + checkerForOddEvenArray] = firstMyArray[i];
+                            checkerForOddEvenArray++;
+                        }
+                        else if (i > firstMyArray.Length / 2)
+                        {
+                            secondMyArray[counter] = firstMyArray[i];
+                            counter++;
+                        }
+                        else
+                        {
+                            secondMyArray[i] = firstMyArray[i];
+                        }
+                    }
                 }
 
-                for (int i = 1; i < firstMyArray.Length; i++)
+                else if (firstMyArray.Length % 2 == 0)
                 {
-                    Console.Write(firstMyArray[i]);
+                    checkerForOddEvenArray = 0;
+                    for (int i = 0; i < firstMyArray.Length; i++)
+                    {
+                        if (i < firstMyArray.Length / 2)
+                        {
+                            secondMyArray[firstMyArray.Length / 2 + checkerForOddEvenArray] = firstMyArray[i];
+                            checkerForOddEvenArray++;
+                        }
+                        else if (i > firstMyArray.Length / 2 - 1)
+                        {
+                            secondMyArray[counter] = firstMyArray[i];
+                            counter++;
+                        }
+                        else if (i == firstMyArray.Length / 2 + 1)
+                        {
+                            secondMyArray[i] = firstMyArray[i];
+                        }
+                    }
+                }
+
+                foreach (int elem in secondMyArray)
+                {
+                    Console.WriteLine(elem);
                 }
 
                 Console.Write("\nWould you try again ? (Y/y) or (N/n): ");
