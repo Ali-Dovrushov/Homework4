@@ -33,7 +33,7 @@ namespace Question6
 
                 foreach (int numElements in secondMyArray)
                 {
-                    Console.Write($"{numElements} ");
+                    Console.Write($"{numElements}");
                 }
 
                 
@@ -42,29 +42,29 @@ namespace Question6
 
                 do
                 {
-                    char symbolForSwitch = Convert.ToChar(Console.ReadLine());
+                    string symbolForSwitch = Convert.ToString(Console.ReadLine());
                     switch (symbolForSwitch)
                     {
-                        case 'Y':
+                        case "Y":
                             {
                                 selection = true;
                                 selectionForSwitch = true;
                                 break;
                             }
-                        case 'y':
+                        case "y":
                             {
                                 selection = true;
                                 selectionForSwitch = true;
                                 break;
                             }
-                        case 'N':
+                        case "N":
                             {
                                 Console.WriteLine("Have a good day :)");
                                 selection = false;
                                 selectionForSwitch = true;
                                 break;
                             }
-                        case 'n':
+                        case "n":
                             {
                                 Console.WriteLine("Have a good day :)");
                                 selection = false;

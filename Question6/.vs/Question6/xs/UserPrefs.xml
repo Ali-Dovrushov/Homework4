@@ -1,11 +1,22 @@
 ﻿<Properties StartupConfiguration="{63EBF456-4931-4F3D-8807-3DD9C6BCF014}|Default">
   <MonoDevelop.Ide.Workbench ActiveDocument="Question6/Program.cs">
     <Files>
-      <File FileName="Question6/Program.cs" Line="23" Column="18" />
+      <File FileName="Question6/Program.cs" Line="46" Column="45" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Question6" expanded="True">
+            <Node name="Question6" expanded="True">
+              <Node name="Program.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.Question6 FirstBuild="True" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.Question6 PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
