@@ -8,9 +8,6 @@ namespace Question5
         {
             bool selection = true;
             bool selectionForSwitch = false;
-            //dasfdsf
-            //sdgdsg
-            //sdgwg
 
             do
             {
