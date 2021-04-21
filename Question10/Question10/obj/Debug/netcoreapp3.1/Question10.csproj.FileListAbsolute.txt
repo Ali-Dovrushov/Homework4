@@ -1,0 +1,12 @@
+/Users/dovrushov/Code-projects/C#Projects/Homework4/Question10/Question10/bin/Debug/netcoreapp3.1/Question10.deps.json
+/Users/dovrushov/Code-projects/C#Projects/Homework4/Question10/Question10/bin/Debug/netcoreapp3.1/Question10.runtimeconfig.json
+/Users/dovrushov/Code-projects/C#Projects/Homework4/Question10/Question10/bin/Debug/netcoreapp3.1/Question10.runtimeconfig.dev.json
+/Users/dovrushov/Code-projects/C#Projects/Homework4/Question10/Question10/bin/Debug/netcoreapp3.1/Question10.dll
+/Users/dovrushov/Code-projects/C#Projects/Homework4/Question10/Question10/bin/Debug/netcoreapp3.1/Question10.pdb
+/Users/dovrushov/Code-projects/C#Projects/Homework4/Question10/Question10/obj/Debug/netcoreapp3.1/Question10.csprojAssemblyReference.cache
+/Users/dovrushov/Code-projects/C#Projects/Homework4/Question10/Question10/obj/Debug/netcoreapp3.1/Question10.AssemblyInfoInputs.cache
+/Users/dovrushov/Code-projects/C#Projects/Homework4/Question10/Question10/obj/Debug/netcoreapp3.1/Question10.AssemblyInfo.cs
+/Users/dovrushov/Code-projects/C#Projects/Homework4/Question10/Question10/obj/Debug/netcoreapp3.1/Question10.csproj.CoreCompileInputs.cache
+/Users/dovrushov/Code-projects/C#Projects/Homework4/Question10/Question10/obj/Debug/netcoreapp3.1/Question10.dll
+/Users/dovrushov/Code-projects/C#Projects/Homework4/Question10/Question10/obj/Debug/netcoreapp3.1/Question10.pdb
+/Users/dovrushov/Code-projects/C#Projects/Homework4/Question10/Question10/obj/Debug/netcoreapp3.1/Question10.genruntimeconfig.cache
