@@ -14,18 +14,13 @@ namespace Question10
 
                 do
                 {
-                    Console.Write("Enter array elements: ");
+                    Console.Write("Enter array elements for Fibonacci: ");
 
                     int arrayElements = int.Parse(Console.ReadLine());
                     int[] myArray = new int[arrayElements];
 
                     myArray[0] = 0;
                     myArray[1] = 1;
-                    //for (int i = 2; i < myArray.Length; i++)
-                    //{
-                    //    Console.Write($"Enter {i} index, array number: ");
-                    //    myArray[i] = int.Parse(Console.ReadLine());
-                    //}
 
                     for (int i = 2; i < myArray.Length; i++)
                     {
