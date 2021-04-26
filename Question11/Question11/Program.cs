@@ -6,7 +6,7 @@ namespace Question11
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Question №1");
+            Console.WriteLine("Question №11");
 
             bool selection = true;
             bool selectionForSwitch = false;
