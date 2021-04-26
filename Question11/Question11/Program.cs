@@ -148,7 +148,7 @@ namespace Question11
                         }
                         else if (firstPersonTryAge == secondPersonTryAge)
                         {
-                            Console.WriteLine("No, they are not the same age");
+                            Console.WriteLine("No, they are the same age");
                         }
                     }
 
@@ -164,7 +164,7 @@ namespace Question11
                         }
                         else if (firstPersonTryAge == secondPersonTryAge)
                         {
-                            Console.WriteLine("No, they are not the same age");
+                            Console.WriteLine("No, they are the same age");
                         }
                     }
 
@@ -174,11 +174,11 @@ namespace Question11
                         {
                             Console.WriteLine("Yes, they are the same age ");
                         }
-                        else if (firstPersonTryAge >= secondPersonTryAge)
+                        else if (firstPersonTryAge > secondPersonTryAge)
                         {
                             Console.WriteLine("No, they are not a same age ");
                         }
-                        else if (firstPersonTryAge <= secondPersonTryAge)
+                        else if (firstPersonTryAge < secondPersonTryAge)
                         {
                             Console.WriteLine("No, they are not a same age ");
                         }
